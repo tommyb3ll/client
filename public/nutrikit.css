@@ -1,0 +1,44 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.list-box-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100px; /* Adjust as needed */
+}
+
+#availableItems, #selectedItems {
+    width: 200px;
+}
+
+.summary {
+    margin-top: 20px;
+}

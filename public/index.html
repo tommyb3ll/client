@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Web Assignment 0</title>
+  <meta name="description" content="First web assignment">
+  <!-- Replace 'student name' with your actual name -->
+  <meta name="author" content="Tommy Bell">
+  
+  <script>
+    function updateFoodInfo() {
+      const foodSelect = document.getElementById('foodGroup');
+      const selectedFood = foodSelect.value;
+
+      const colors = document.getElementsByName('color');
+      let selectedColor = 'black';
+      for (const color of colors) {
+        if (color.checked) {
+          selectedColor = color.value;
+          break;
+        }
+      }
+
+      const foodText = document.getElementById('foodText');
+
+      foodText.value = selectedFood;
+      foodText.style.color = selectedColor;
+    }
+  </script>
+</head>
+
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+  <div style="text-align: center;">
+
+    <h1 style="font-weight: bold; font-family: Verdana, sans-serif; font-size: 36px;">
+      SWEN-344 Web Assignment 0
+    </h1>
+
+    <h2 style="font-family: Impact, sans-serif;">
+      Section 03
+    </h2>
+
+    <div style="margin-bottom: 20px;">
+      <select id="foodGroup" onchange="updateFoodInfo()">
+        <option value=""> </option>
+        <option value="Protein">Protein</option>
+        <option value="Carbs">Carbs</option>
+        <option value="Fruits">Fruits</option>
+        <option value="Vegetables">Vegetables</option>
+        <option value="Sweets">Sweets</option>
+      </select>
+    </div>
+
+    <div style="display: inline-block; text-align: left; margin-bottom: 20px;">
+      <input type="radio" id="black" name="color" value="black" onchange="updateFoodInfo()" checked>
+      <label for="black">Black</label><br>
+      <input type="radio" id="red" name="color" value="red" onchange="updateFoodInfo()">
+      <label for="red">Red</label><br>
+      <input type="radio" id="green" name="color" value="green" onchange="updateFoodInfo()">
+      <label for="green">Green</label><br>
+      <input type="radio" id="blue" name="color" value="blue" onchange="updateFoodInfo()">
+      <label for="blue">Blue</label><br>
+      <input type="radio" id="purple" name="color" value="purple" onchange="updateFoodInfo()">
+      <label for="purple">Purple</label><br>
+    </div>
+
+    <div>
+      <textarea id="foodText" rows="4" cols="50" style="resize: none;">Food Type...</textarea>
+    </div>
+
+  </div>
+
+</body>
+</html>

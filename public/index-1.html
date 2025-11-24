@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NutriKit Food Planner</title>
+  <meta name="description" content="Client-1 web assignment">
+  <meta name="author" content="Tommy Bell">
+  <link rel="stylesheet" href="nutrikit.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>NutriKit Food Planner</h1>
+    <h3>NutriKit allows you to select your groceries, and track your nutritional progress (good or bad)</h3>
+
+    <div class="controls">
+      <select id="categorySelect">
+        <option value="">Select a category</option>
+        <option value="proteins">Proteins</option>
+        <option value="fruits">Fruits</option>
+        <option value="vegetables">Vegetables</option>
+        <option value="dairy">Dairy</option>
+        <option value="grains">Grains</option>
+      </select>
+    </div>
+
+    <div class="list-container">
+      <div class="list-box-wrapper">
+        <label for="availableItems">Available Items</label>
+        <select id="availableItems" size="5"></select>
+      </div>
+
+      <div class="button-wrapper">
+          <button id="addRemoveBtn">&lt;-- --&gt;</button>
+      </div>
+
+      <div class="list-box-wrapper">
+        <label for="selectedItems">My Selections</label>
+        <select id="selectedItems" size="10"></select>
+      </div>
+    </div>
+
+    <div class="summary">
+      <h3>Total Calories: <span id="totalCalories">0</span></h3>
+    </div>
+  </div>
+
+  <script src="nutrikit.js"></script>
+</body>
+</html>
