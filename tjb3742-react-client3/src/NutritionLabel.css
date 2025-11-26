@@ -1,0 +1,53 @@
+.nutrition-label {
+  border: 2px solid #000;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.nutrition-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  border-bottom: 10px solid #000;
+  padding-bottom: 5px;
+}
+
+.serving-info {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.nutrition-line {
+  border-bottom: 1px solid #000;
+  margin: 5px 0;
+}
+
+.nutrition-line.thick {
+  border-bottom: 5px solid #000;
+  margin: 10px 0;
+}
+
+.nutrition-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0;
+  font-size: 0.95rem;
+}
+
+.nutrition-row.small-text {
+  font-size: 0.85rem;
+}
+
+.nutrition-row.indent {
+  padding-left: 20px;
+}
+
+.nutrition-value {
+  font-weight: bold;
+}
+
+.dv-note {
+  font-size: 0.75rem;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #666;
+}
